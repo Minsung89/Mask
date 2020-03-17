@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".SplashActivity">
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#2f55ad"
+            android:padding="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="마스크 찾기"
+            android:gravity="center"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:textColor="#2f55ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="마스크 재고 현황"
+            android:gravity="center"
+            android:textSize="45sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:textColor="#111111"
+            android:padding="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="대한민국 국민은 이길 수 있습니다. \n 모두 예방합시다!"
+            android:gravity="center"
+            android:textSize="22sp" />
+        <TextView
+            android:background="@drawable/splash_round_line_background"
+            android:textColor="#111111"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="100dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. 마스크 착용하기\n2. 기침은 팔로 막고 하기\n3. 비누로 30초이상 손 씻기"
+            android:gravity="left"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

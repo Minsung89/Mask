@@ -1,0 +1,45 @@
+ext.deps = [:]
+
+/* versions */
+def versions = [:]
+versions.kotlin_version = '1.3.70'
+versions.dagger_version = '2.24'
+versions.retrofit_version = '2.4.0'
+versions.room_version = '2.2.0-alpha02'
+versions.appcompat_version = "1.1.0"
+ext.versions = versions
+
+def deps = [:]
+
+/* Appcompat */
+deps.appcompat = "androidx.appcompat:appcompat:$versions.appcompat_version"
+
+/* kotlin */
+def kotlin = [:]
+kotlin.plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin_version"
+kotlin.stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin_version"
+deps.kotlin = kotlin
+
+/* retrofit */
+def retrofit = [:]
+retrofit.runtime = "com.squareup.retrofit2:retrofit:$versions.retrofit_version"
+retrofit.gson = "com.squareup.retrofit2:converter-gson:$versions.retrofit_version"
+retrofit.simplexml = "com.squareup.retrofit2:converter-simplexml:$versions.retrofit_version"
+deps.retrofit = retrofit
+
+/* room */
+def room = [:]
+room.runtime = "androidx.room:room-runtime:$versions.room_version"
+room.testing = "androidx.room:room-testing:$versions.room_version"
+room.compiler = "androidx.room:room-compiler:$versions.room_version"
+room.rxjava2 = "androidx.room:room-rxjava2:$versions.room_version"
+room.guava = "androidx.room:room-guava:$versions.room_version"
+deps.room = room
+
+/* degger */
+def degger = [:]
+degger.runtime = "com.google.dagger:dagger:$versions.dagger_version"
+degger.compiler = "com.google.dagger:dagger-compiler:$versions.dagger_version"
+deps.degger = degger
+
+ext.deps = deps
